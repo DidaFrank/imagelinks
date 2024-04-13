@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Links</title>
+
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        nav, main, footer {
+            display: block;
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 14px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: black;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            padding: 10px;
+            margin: 10px;
+            text-decoration: none;
+            border-radius: 14px;
+        }
+        button a {
+            color: #fff;
+            text-decoration: none;
+        }    
+        a {
+            color: black;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 14px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 20px;
+        }
+        .menu-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .menu-list li {
+            margin-bottom: 10px;
+        }
+        .menu-list img {
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <button><a href="#home">Home</a></button>
+        <button><a href="#gallery">Gallery</a></button>
+        <button><a href="#menu">Menu</a></button>
+    </nav>
+
+<main>
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to all things Technology!! This awesome Glowing Circiut Board should tickle your tech bug lol!!</p>
+
+            <a href="https://unsplash.com/photos/teal-led-panel-EUsVwEOsblE">
+                <img src="glowing board.jpg" alt="Glowing Circiut Board">
+            </a>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <p>Take a virtual trip through nature!!
+        </p>
+        <div class="gallery">
+            <a href="https://unsplash.com/photos/blue-and-brown-steel-bridge-eOpewngf68w">
+                <img src="bridge.jpg" alt="Bridge in a forest">
+            </a>
+            <a href="https://unsplash.com/photos/green-grass-field-during-sunset-_RBcxo9AU-U">
+                <img src="field.jpg" alt="Open Green Field">
+            </a>
+            <a href="https://unsplash.com/photos/a-person-standing-on-a-sand-dune-in-the-desert-TA5hw14Coh4">
+                <img src="sand dunes.jpg" alt="Person Standing On A Sand Dune">
+            </a>
+        </div>
+    </section>
+
+    <section id="menu">
+        <h2>Menu</h2>
+        <p>Have a virtual taste of some 'virtual food'</p>
+        <ul class="menu-list">
+            <li><a href="https://unsplash.com/photos/cooked-dish-on-gray-bowl--YHSwy6uqvk">
+                <img src="meat salad.jpg" alt="Serving Of Meat With Salad"></a>
+            </li>
+            <li><a href="https://unsplash.com/photos/burger-skewered-with-knife-near-black-textile-1Shk_PkNkNw">
+                <img src="burger.jpg" alt="A Burger And Knife"></a>
+            </li>
+            <li><a href="https://unsplash.com/photos/assorted-fruits-on-brown-wooden-bowls-Yn0l7uwBrpw">
+                <img src="fruits.jpg" alt="Assorted Fruits On Bowls"></a>
+            </li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Frank Dida. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
